@@ -4,7 +4,8 @@
     box-sizing: border-box;
 }
 
-ul, li {
+ul,
+li {
     list-style: none;
 }
 
@@ -19,11 +20,11 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-:root{
+:root {
     --desktop-color: rgba(51, 71, 176, 1);
 }
 
-header{
+header {
     display: flex;
     max-width: 100%;
     justify-content: space-between;
@@ -32,7 +33,6 @@ header{
     color: #ffff;
     background-color: var(--desktop-color);
 }
-
 
 footer {
     display: flex;
@@ -43,6 +43,7 @@ footer {
     background-color: var(--desktop-color);
     font-weight: 400;
 }
+
 main {
     display: grid;
     grid-template-columns: 40% 20% 40%;
@@ -61,7 +62,6 @@ main {
 .escolha span {
     color: var(--desktop-color);
     font-weight: 700;
-
 }
 
 .devices {
@@ -73,10 +73,12 @@ main {
     display: grid;
     grid-area: left;
 }
+
 .container-right {
     grid-area: right;
     display: flex;
 }
+
 .img {
     display: grid;
     grid-area: img;
@@ -89,7 +91,7 @@ main {
     gap: 50px;
 }
 
-.box{
+.box {
     display: flex;
     height: 220px;
     width: 300px;
@@ -102,8 +104,10 @@ main {
     gap: 24px;
     border: 1px solid rgba(0, 0, 0, 1);
     box-shadow: 12px 12px 4px 0px rgba(51, 71, 176, 0.5);
-    
+    text-align: center;
+    font-size: 2rem;
 }
+
 @media (max-width:640px) {
     main {
         padding: 0;
@@ -113,26 +117,25 @@ main {
         flex-direction: column;
         gap: 20px;
     }
-   
     .box {
         height: 175px;
         width: 175px;
     }
-    .box i{
-       display: none;
+    .box i {
+        display: none;
     }
-    .escolha{
+    .escolha {
         font-size: 1.6rem;
         text-align: center;
     }
     .sair p {
         display: none;
     }
-    img{
+    img {
         display: none;
     }
-   
 }
+
 .logo {
     display: flex;
     gap: 11px;
@@ -141,14 +144,15 @@ main {
     font-size: 1.5rem;
     font-weight: 700;
 }
+
 .sair {
     display: flex;
     gap: 12px;
     font-size: 2rem;
     align-items: center;
     font-weight: 500;
-
 }
+
 .container-contato {
     display: flex;
     flex-direction: column;
@@ -176,15 +180,14 @@ main {
     border: 2px solid #fff;
     font-size: 1.2rem;
 }
-@media (max-width:640px) {
 
+@media (max-width:640px) {
     .logo img {
         display: block;
     }
     .container-contato {
         align-items: center;
     }
-    
     .container-social {
         display: flex;
         gap: 23px;
@@ -193,7 +196,6 @@ main {
     .sair p {
         display: none;
     }
-
     header {
         padding: 0;
         padding: 0 28px;
@@ -205,7 +207,7 @@ main {
         height: 300px;
         justify-content: space-around;
     }
-    .container-copy{
+    .container-copy {
         display: flex;
         justify-content: center;
         align-items: center;
